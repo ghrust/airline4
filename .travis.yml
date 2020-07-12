@@ -2,6 +2,6 @@ language: python
 python: 3.6
 services:
   - docker
-  - postgresql
+  # - postgresql
 script:
-  - docker-compose run web python manage.py test
+  - docker-compose up
